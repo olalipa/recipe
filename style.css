@@ -1,9 +1,11 @@
 .main-container {
     display: flex;
     background-image: url('Dish.png');
-    background-size: 100%;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 30px;
     font-family: roboto, sans-serif;
     width: 90vw;
@@ -28,19 +30,11 @@
     margin-bottom: 20px;
 }
 
-.right-section {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-}
-
 .preparation-container {
     display: flex;
     flex-direction: column;
     background-color: antiquewhite;
-    width: 60%;
+    width: 40%;
     height: 35%;
     border-radius: 10px 10px 10px 10px;
     margin-bottom: 10px;
@@ -83,11 +77,11 @@
 }
 
 h3{
-    margin-bottom:5px;
+    margin-bottom: 10px;
 }
 
 h2{
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 img{
@@ -99,7 +93,6 @@ img{
 @media (max-width: 1200px) {
     .main-container {
         flex-direction: row;
-        background-repeat: repeat;
     }
 
     .title-container {
@@ -134,46 +127,15 @@ img{
     .ingredients-text {
         margin-right: 10px;
     }
-
 }
 
-
 @media (max-width: 992px) {
-    .main-container {
-        flex-direction: row;
-    }
-
-    .title-container {
-        height: 20%;
-        width: 90%;
-    }
-
-    .left-section {
-        width: 50%;
-    }
-
-    .ingredients-container {
-        width: 70%;
-        margin-top: 10%;
-    }
-
     .preparation-container {
         width: 90%;
     }
 
-    .right-section {
-        margin-top: 5%;
-        width: 50%;
-        justify-content: center;
-    }
-
-    .title-text {
-        margin-bottom: 20px;
-        margin-right: 10px;
-    }
-
-    .ingredients-text {
-        margin-right: 10px;
+    img {
+        width: 50px;
     }
 }
 
@@ -182,38 +144,9 @@ img{
         flex-direction: column;
     }
 
-    .title-container {
-        height: 20%;
-        width: 90%;
-    }
-
     .left-section {
         width: 100%;
         align-items: center;
-    }
-
-    .ingredients-container {
-        width: 70%;
-        margin-top: 10%;
-    }
-
-    .preparation-container {
-        width: 90%;
-    }
-
-    .right-section {
-        margin-top: 5%;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title-text {
-        margin-bottom: 20px;
-    }
-
-    img {
-        width: 50px;
     }
 }
 
